@@ -54,16 +54,16 @@ class SignupFormModelValidatorTests: XCTestCase {
   }
   
   func testSignupFormModelValidator_WhenEqualPasswordsProvided_ShouldReturnTrue() {
-    
-    let isConfirmPasswordValid = sut.doPasswordsMatch(password: "123456", repeatPassword: "123456")
+    // Act
+    let isConfirmPasswordValid = sut.doPasswordsMatch(password: "12345678", repeatPassword: "12345678")
     
     XCTAssertTrue(isConfirmPasswordValid, "The doPasswordsMatch() should have returned TRUE for matching passwords, but it has returned FALSE")
   }
   
-  func testSignupFormModelValidator_WhenEqualPasswordsProvided_ShouldReturnFalse() {
+  func testSignupFormModelValidator_WhenNotMatchingPasswordsProvided_ShouldReturnFalse() {
+    // Act
+    let doPasswordsMatch = sut.doPasswordsMatch(password: "12345678", repeatPassword: "1234678")
     
-    let doPasswordsMatch = sut.doPasswordsMatch(password: "123456", repeatPassword: "12345")
-    
-    XCTAssertFalse(doPasswordsMatch, "The doPasswordsMatch() should have returned FALSE for matching passwords, but it has returned TRUE")
+    XCTAssertFalse(doPasswordsMatch, "The doPasswordsMatch() should have returned FALSE for passwords that do not match, but it has returned TRUE")
   }
 }
