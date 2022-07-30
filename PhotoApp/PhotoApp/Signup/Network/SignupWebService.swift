@@ -9,10 +9,12 @@ import Foundation
 
 class SignupWebService {
   
+  private var urlSession: URLSession
   private var urlString: String
   
-  init(urlString: String) {
+  init(urlString: String, urlSession: URLSession = .shared) {
     self.urlString = urlString
+    self.urlSession = urlSession
   }
   
   func signup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
@@ -27,7 +29,7 @@ class SignupWebService {
   
   request.httpBody = try? JSONEncoder().encode(formModel)
   
-  let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+  let dataTask = urlSession.dataTask(with: request) { (data, response, error) in
     //
   }
   
