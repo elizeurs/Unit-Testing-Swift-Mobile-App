@@ -26,4 +26,11 @@ class SignupWebService {
   request.setValue("application/json", forHTTPHeaderField: "Accept")
   
   request.httpBody = try? JSONEncoder().encode(formModel)
+  
+  let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+    //
+  }
+  
+  dataTask.resume()
+}
 }
