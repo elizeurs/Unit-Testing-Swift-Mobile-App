@@ -20,4 +20,10 @@ class SignupWebService {
     // TODO: Create a unit test to test that a specific error is returned is url is nil.
     return
   }
+  var request = URLRequest(url: url)
+  request.httpMethod = "POST"
+  request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+  request.setValue("application/json", forHTTPHeaderField: "Accept")
+  
+  request.httpBody = try? JSONEncoder().encode(formModel)
 }
