@@ -17,16 +17,15 @@ class SignupWebService {
     self.urlSession = urlSession
   }
   
-  func signup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
-    guard let url = URL(string: urlString) else { return }
-    // TODO: Create a unit test to test that a specific error is returned is url is nil.
+  func signup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping (SignupResponseModel?, SignupError?) -> Void) {
+    guard let url = URL(string: urlString) else {
+    // TODO: Create a unit test to test that a specific error message is returned is url is nil.
     return
   }
   var request = URLRequest(url: url)
   request.httpMethod = "POST"
   request.setValue("application/json", forHTTPHeaderField: "Content-Type")
   request.setValue("application/json", forHTTPHeaderField: "Accept")
-  
   request.httpBody = try? JSONEncoder().encode(formModel)
   
   let dataTask = urlSession.dataTask(with: request) { (data, response, error) in
@@ -35,9 +34,9 @@ class SignupWebService {
     if let data = data, let SignupResponseModel = try? JSONDecoder().decode(SignupResponseModel.self, from: data) {
       completionHandler(SignupResponseModel, nil)
     } else {
-        // TODO: create a new unit test to handle an error here
+      // TODO: create a new unit test to handle an error here
+    }
   }
-  
-  dataTask.resume()
-}
+    dataTask.resume()
+  }
 }
