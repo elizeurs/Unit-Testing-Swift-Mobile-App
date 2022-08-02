@@ -30,6 +30,7 @@ class SignupWebServiceTests: XCTestCase {
     signFormRequestModel = nil
     // need to reset this stabResponseDate, 'cause it's a static one.
     MockURLProtocol.stubResponseData = nil
+    MockURLProtocol.error = nil
   }
   
   func testSignupWebService_WhenGivenSuccessfullResponse_ReturnsSuccess() {
@@ -86,6 +87,29 @@ class SignupWebServiceTests: XCTestCase {
       // add one more assertion, to make sure the signup assertion response model here is nill. signupResponseModel is the SignupResponseModel object.
       XCTAssertNil(signupResponseModel, "When an invalidRequestURLString takes place, the response model must be nil")
       // i want this expectation to fulfill only inside of my signup method closure.
+      expectation.fulfill()
+    }
+    
+    self.wait(for: [expectation], timeout: 2)
+  }
+  
+  func testSignupWebService_WhenURLRequestFails_ReturnsErrorMessageDescription() {
+    
+    // Arrange
+    let expectation = self.expectation(description: "A failed Request expectation")
+    let errorDescription = "A localized description of an error"
+    
+    // lesson 55
+    // XCTAssertEqual failed: ("Optional(PhotoApp.SignupError.failedRequest(description: "The operation couldn’t be completed. (PhotoApp.SignupError error 0.)"))") is not equal to ("Optional(PhotoApp.SignupError.failedRequest(description: "A localized description of an error"))")
+    //    MockURLProtocol.error = SignupError.failedRequest(description: errorDescription)
+    MockURLProtocol.error = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: errorDescription])
+    
+    
+    // Act
+    sut.signup(withForm: signFormRequestModel) { (signupResponseModel, error) in
+      // Assert
+      XCTAssertEqual(error, SignupError.failedRequest(description: errorDescription), "The signup method did not return an expecter error for the Failed Request")
+      //      XCTAssertEqual(error?.localizedDescription, errorDescription)
       expectation.fulfill()
     }
     
