@@ -21,7 +21,7 @@
 		75D7749928945B2F0012EF7D /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7749828945B2F0012EF7D /* SignupWebService.swift */; };
 		75D7749B28948E5B0012EF7D /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7749A28948E5B0012EF7D /* SignupFormRequestModel.swift */; };
 		75D7749D289494180012EF7D /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7749C289494180012EF7D /* SignupResponseModel.swift */; };
-		75D7749F289496FC0012EF7D /* SignupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7749E289496FC0012EF7D /* SignupErrors.swift */; };
+		75D7749F289496FC0012EF7D /* SignupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7749E289496FC0012EF7D /* SignupError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		75D7749828945B2F0012EF7D /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
 		75D7749A28948E5B0012EF7D /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
 		75D7749C289494180012EF7D /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
-		75D7749E289496FC0012EF7D /* SignupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrors.swift; sourceTree = "<group>"; };
+		75D7749E289496FC0012EF7D /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				751A6BDC2891CF96008DE426 /* SignupFormModelValidator.swift */,
 				75D7749A28948E5B0012EF7D /* SignupFormRequestModel.swift */,
 				75D7749C289494180012EF7D /* SignupResponseModel.swift */,
-				75D7749E289496FC0012EF7D /* SignupErrors.swift */,
+				75D7749E289496FC0012EF7D /* SignupError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 				751A6BBA2891BBE1008DE426 /* AppDelegate.swift in Sources */,
 				75D7749D289494180012EF7D /* SignupResponseModel.swift in Sources */,
 				751A6BDD2891CF96008DE426 /* SignupFormModelValidator.swift in Sources */,
-				75D7749F289496FC0012EF7D /* SignupErrors.swift in Sources */,
+				75D7749F289496FC0012EF7D /* SignupError.swift in Sources */,
 				751A6BDF2891E86F008DE426 /* SignupConstants.swift in Sources */,
 				75D7749B28948E5B0012EF7D /* SignupFormRequestModel.swift in Sources */,
 				75D7749928945B2F0012EF7D /* SignupWebService.swift in Sources */,

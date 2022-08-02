@@ -64,7 +64,7 @@ class SignupWebServiceTests: XCTestCase {
       
       // Assert
       XCTAssertNil(signupResponseModel, "The response model for a request containing unknown JSON response, should have been nil")
-      XCTAssertEqual(error, SignupErrors.responseModelParsingError, "The signup() method did not return expected error")
+      XCTAssertEqual(error, SignupError.invalidResponseModel, "The signup() method did not return expected error")
       expectation.fulfill()
     }
     
@@ -82,7 +82,7 @@ class SignupWebServiceTests: XCTestCase {
     sut.signup(withForm: signFormRequestModel) { (signupResponseModel, error) in
       
       // Assert
-      XCTAssertEqual(error, SignupErrors.invalidRequestURLStringError, "The signup() method did not return an expected error for an invalidRequestURLString error")
+      XCTAssertEqual(error, SignupError.invalidRequestURLString, "The signup() method did not return an expected error for an invalidRequestURLString error")
       // add one more assertion, to make sure the signup assertion response model here is nill. signupResponseModel is the SignupResponseModel object.
       XCTAssertNil(signupResponseModel, "When an invalidRequestURLString takes place, the response model must be nil")
       // i want this expectation to fulfill only inside of my signup method closure.
