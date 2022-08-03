@@ -9,7 +9,7 @@ import Foundation
 
 class SignupPresenter {
   
-  func processUserSignup(formModel: SignupFormRequestModel) {
+  func processUserSignup(formModel: SignupFormModel) {
     
   }
 }
