@@ -86,10 +86,11 @@
 		7506315F28959D9600282311 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				75212060289B2C9D0048D392 /* Protocols */,
+				7521205F289B2C2F0048D392 /* Presenters */,
 				7506316228959E7700282311 /* Network */,
 				7506316128959E2100282311 /* Controllers */,
 				7506316028959DA600282311 /* Models */,
-				75212059289AF5590048D392 /* SignupPresenter.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -167,7 +168,6 @@
 				751A6BC22891BBE3008DE426 /* Assets.xcassets */,
 				751A6BC42891BBE3008DE426 /* LaunchScreen.storyboard */,
 				751A6BC72891BBE3008DE426 /* Info.plist */,
-				7521205D289B08630048D392 /* SignupModelValidatorProtocol.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -180,14 +180,46 @@
 			path = PhotoAppTests;
 			sourceTree = "<group>";
 		};
+		7521205F289B2C2F0048D392 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				75212059289AF5590048D392 /* SignupPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		75212060289B2C9D0048D392 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7521205D289B08630048D392 /* SignupModelValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		75212061289B2CDD0048D392 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				7563BDC42899DB5400396FE5 /* SignupPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		75212062289B2D110048D392 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7545540828984A4800D813C8 /* MockURLProtocol.swift */,
+				7521205B289B01EB0048D392 /* MockSignupModelValidator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		75455407289849C300D813C8 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				75212062289B2D110048D392 /* Mocks */,
+				75212061289B2CDD0048D392 /* Presenters */,
 				7506316328959EED00282311 /* Network */,
 				7506316428959EF800282311 /* Models */,
-				7545540828984A4800D813C8 /* MockURLProtocol.swift */,
-				7563BDC42899DB5400396FE5 /* SignupPresenterTests.swift */,
-				7521205B289B01EB0048D392 /* MockSignupModelValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
