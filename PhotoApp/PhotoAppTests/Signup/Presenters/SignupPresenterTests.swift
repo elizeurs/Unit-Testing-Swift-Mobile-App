@@ -61,8 +61,13 @@ class SignupPresenterTests: XCTestCase {
   
   func testSignupPresenter_WhenSignupOperationSuccessfull_CallsSuccessOnViewDelegate() {
     // Arrange
+    let myExpectation = expectation(description: "Expected the successfulSignup() method to be called")
+    let mockSignupViewDelegate = MockSignupViewDelegate()
+    mockSignupViewDelegate.expectation = myExpectation
     
     // Act
+    sut.processUserSignup(formModel: signupFormModel)
+    self.wait(for: [myExpectation], timeout: 5)
     
     // Assert
   }
