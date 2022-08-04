@@ -39,7 +39,7 @@ class SignupPresenterTests: XCTestCase {
     XCTAssertTrue(mockSignupModelValidator.isPasswordEqualityValidated, "Did not validate, if passwords match")
   }
   
-  func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod() ->  {
+  func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod()  {
     // Arrange
     let signupFormModel = SignupFormModel(firstName: "Sergey",
                                           lastName: "Kargopolov",
@@ -56,5 +56,6 @@ class SignupPresenterTests: XCTestCase {
     sut.processUserSignup(formModel: signupFormModel)
     
     // Assert
+    XCTAssertTrue(mockSignupWebService.isSignupMethodCalled, "The signup() method was not called in the SignupWebService class")
   }
 }
