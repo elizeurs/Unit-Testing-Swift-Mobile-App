@@ -58,4 +58,12 @@ class SignupPresenterTests: XCTestCase {
     // Assert
     XCTAssertTrue(mockSignupWebService.isSignupMethodCalled, "The signup() method was not called in the SignupWebService class")
   }
+  
+  func testSignupPresenter_WhenSignupOperationSuccessfull_CallsSuccessOnViewDelegate() {
+    // Arrange
+    
+    // Act
+    
+    // Assert
+  }
 }
