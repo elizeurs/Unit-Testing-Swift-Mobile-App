@@ -33,9 +33,12 @@ class SignupPresenterTests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+      
+      // set it to nil, to release resources.
       signupFormModel = nil
       mockSignupModelValidator =  nil
       mockSignupWebService = nil
+      mockSignupViewDelegate = nil
       sut = nil
     }
   
@@ -73,6 +76,6 @@ class SignupPresenterTests: XCTestCase {
     self.wait(for: [myExpectation], timeout: 5)
     
     // Assert
-    XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 1)
+    XCTAssertEqual(mockSignupViewDelegate.successfulSignupCounter, 1, "The successfulSignup() method was called more than one time")
   }
 }
