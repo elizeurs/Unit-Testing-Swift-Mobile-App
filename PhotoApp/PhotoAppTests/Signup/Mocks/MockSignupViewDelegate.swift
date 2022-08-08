@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 @testable import PhotoApp
 
-class MockSignupViewDelegate: signupViewDelegateProtocol {
+class MockSignupViewDelegate: SignupViewDelegateProtocol {
   
   var expectation: XCTestExpectation?
   var successfulSignupCounter = 0
