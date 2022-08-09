@@ -23,11 +23,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A6B41886-D683-46EA-9BD4-2C42D588F1E3"
+            uuid = "B05F19CB-EF90-42D2-A1F8-C32CDE632025"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LoadingViewControllersInUnitTest/ViewController.swift"
+            filePath = "LoadingViewControllersInUnitTest/XIBBasedViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
