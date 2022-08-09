@@ -17,6 +17,8 @@
 		75610BB228A319E6007704D2 /* XIBBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75610BB028A319E6007704D2 /* XIBBasedViewController.swift */; };
 		75610BB328A319E6007704D2 /* XIBBasedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75610BB128A319E6007704D2 /* XIBBasedViewController.xib */; };
 		75610BB528A31A49007704D2 /* LoadingViewControllerWithXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75610BB428A31A49007704D2 /* LoadingViewControllerWithXIB.swift */; };
+		75610BB728A32071007704D2 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75610BB628A32071007704D2 /* HomePageViewController.swift */; };
+		75610BB928A321B1007704D2 /* HomePageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75610BB828A321B1007704D2 /* HomePageViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		75610BB028A319E6007704D2 /* XIBBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewController.swift; sourceTree = "<group>"; };
 		75610BB128A319E6007704D2 /* XIBBasedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBasedViewController.xib; sourceTree = "<group>"; };
 		75610BB428A31A49007704D2 /* LoadingViewControllerWithXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerWithXIB.swift; sourceTree = "<group>"; };
+		75610BB628A32071007704D2 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		75610BB828A321B1007704D2 /* HomePageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				75610B9D28A3131B007704D2 /* Info.plist */,
 				75610BB028A319E6007704D2 /* XIBBasedViewController.swift */,
 				75610BB128A319E6007704D2 /* XIBBasedViewController.xib */,
+				75610BB628A32071007704D2 /* HomePageViewController.swift */,
 			);
 			path = LoadingViewControllersInUnitTest;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				75610BA928A31351007704D2 /* LoadingViewControllersInUnitTestTests.swift */,
 				75610BB428A31A49007704D2 /* LoadingViewControllerWithXIB.swift */,
+				75610BB828A321B1007704D2 /* HomePageViewControllerTests.swift */,
 			);
 			path = LoadingViewControllersInUnitTestTests;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 				75610BB228A319E6007704D2 /* XIBBasedViewController.swift in Sources */,
 				75610B9428A31318007704D2 /* ViewController.swift in Sources */,
 				75610B9028A31318007704D2 /* AppDelegate.swift in Sources */,
+				75610BB728A32071007704D2 /* HomePageViewController.swift in Sources */,
 				75610B9228A31318007704D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75610BB928A321B1007704D2 /* HomePageViewControllerTests.swift in Sources */,
 				75610BAA28A31351007704D2 /* LoadingViewControllersInUnitTestTests.swift in Sources */,
 				75610BB528A31A49007704D2 /* LoadingViewControllerWithXIB.swift in Sources */,
 			);
