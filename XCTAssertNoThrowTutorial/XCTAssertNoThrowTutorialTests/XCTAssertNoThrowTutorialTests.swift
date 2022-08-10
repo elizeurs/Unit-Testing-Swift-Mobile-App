@@ -46,6 +46,14 @@ class XCTAssertNoThrowTutorialTests: XCTestCase {
     let sut = SignupFormModelValidator()
     
     // Act and Assert
-    XCTAssertNoThrow(try sut.isFirstNameValid("Sergey"), "The isFirstNameValid() should not have thrown an error, when there are no illegal characters provided.")
+//    XCTAssertNoThrow(try sut.isFirstNameValid("Sergey"), "The isFirstNameValid() should not have thrown an error, when there are no illegal characters provided.")
+    
+    do {
+      // making it fail
+      // let _ = try sut.isFirstNameValid("Sergey*")
+      let _ = try sut.isFirstNameValid("Sergey")
+    } catch {
+      XCTFail("The isFirstNameValid() was not supposed to throw an Error, when a valid First Name value was provided")
+    }
   }
 }
