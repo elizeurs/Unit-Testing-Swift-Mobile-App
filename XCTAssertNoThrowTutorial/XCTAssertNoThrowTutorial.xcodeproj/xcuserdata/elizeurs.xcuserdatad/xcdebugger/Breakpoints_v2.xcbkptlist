@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D316BE4E-5A83-4566-AA5E-8DB7CEFB06E5"
+            uuid = "D900F8E7-E571-4358-B8E7-EDDD70BDB983"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XCTAssertNoThrowTutorial/Models/SignupFormValidator.swift"
+            filePath = "XCTAssertNoThrowTutorialTests/XCTAssertNoThrowTutorialTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "isFirstNameValid(_:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testFirstNameValidation_WhenInvalidCharactersProvided_ThrowsAnError()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52AEA4C3-B89A-46A0-8112-B54F692DEFC6"
+            uuid = "3E0128CF-90DB-4C97-94A1-C37D3750451A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XCTAssertNoThrowTutorial/Models/SignupFormValidator.swift"
+            filePath = "XCTAssertNoThrowTutorialTests/XCTAssertNoThrowTutorialTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "isFirstNameValid(_:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "testFirstNameValidation_WhenInvalidCharactersProvided_ThrowsAnError()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

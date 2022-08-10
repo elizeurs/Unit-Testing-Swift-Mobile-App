@@ -22,9 +22,22 @@ class XCTAssertNoThrowTutorialTests: XCTestCase {
     // Arrange
     let sut = SignupFormModelValidator()
     
+    // XCTAssertThrowsError better than Do Try and Catch, 'cause you write less code.
+    
     // Act and Assert
-    XCTAssertThrowsError(try sut.isFirstNameValid("Sergey*"), "The isFirstNameValid() should have thrown an error, if user's first name contains illegal characters") { (errorThrown) in
-      XCTAssertEqual(errorThrown as? SignupError, SignupError.illegalCharactersFound)
+//    XCTAssertThrowsError(try sut.isFirstNameValid("Sergey*"), "The isFirstNameValid() should have thrown an error, if user's first name contains illegal characters") { (errorThrown) in
+//      XCTAssertEqual(errorThrown as? SignupError, SignupError.illegalCharactersFound)
+//    }
+    
+    do {
+      let _ = try sut.isFirstNameValid("Sergey*")
+      XCTFail("The isFirstNameValid() was supposed to throw an error, when illegal characters used in User's first name")
+    } catch SignupError.illegalCharactersFound {
+      // Successfully passing
+      return
+    } catch {
+      XCTFail("The isFirstNameValid() was supposed to throw the SignupError.illegalCharactersFound Error, when illegal characters used. A different Error was thrown.")
+      return
     }
   }
   
