@@ -27,4 +27,12 @@ class XCTAssertNoThrowTutorialTests: XCTestCase {
       XCTAssertEqual(errorThrown as? SignupError, SignupError.illegalCharactersFound)
     }
   }
+  
+  func testFirstNameValidation_WhenValidCharactersProvided_ThrowsNoErrors() {
+    // Assert
+    let sut = SignupFormModelValidator()
+    
+    // Act and Assert
+    XCTAssertNoThrow(try sut.isFirstNameValid("Sergey"), "The isFirstNameValid() should not have thrown an error, when there are no illegal characters provided.")
+  }
 }
