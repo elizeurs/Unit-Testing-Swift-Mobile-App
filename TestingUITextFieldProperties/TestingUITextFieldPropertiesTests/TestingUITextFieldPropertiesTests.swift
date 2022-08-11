@@ -36,5 +36,13 @@ class TestingUITextFieldPropertiesTests: XCTestCase {
     
     XCTAssertEqual(emailTextField.keyboardType, UIKeyboardType.emailAddress, "Email Address UITextField does not have Email Keyboard type set")
   }
+  
+  func testPasswordTextField_WhenCreated_IsSecureTextEntryField() throws {
+    // passwordTextField might not be connected, try to unwrap it w/ XCTUnwrap() and xctunwrap can throw an error, use 'throws'. and in case password could not be unwrap, add a local(?) message.
+    let passwordTextField = try XCTUnwrap(sut.passwordTextField, "The password UITextField is not connected")
+    
+    // add message, in case test fails.
+    XCTAssertTrue(passwordTextField.isSecureTextEntry, "Password UITextField is not a Secury Text Entry Field")
+  }
 }
 
