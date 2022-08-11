@@ -51,16 +51,16 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="qCj-fh-PMp">
             <objects>
-                <viewController id="aFE-s4-Pwa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" id="aFE-s4-Pwa" customClass="SignupViewController" customModule="TestingUITextFieldProperties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o3x-m7-Ujp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-3U-9Il">
-                                <rect key="frame" x="20" y="104" width="374" height="250"/>
+                                <rect key="frame" x="20" y="104" width="374" height="355"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9ib-0e-e5O">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -87,6 +87,16 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qAX-gw-8mm">
+                                        <rect key="frame" x="0.0" y="270" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arT-bB-GBN">
+                                        <rect key="frame" x="0.0" y="324" width="374" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Signup"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -98,6 +108,14 @@
                             <constraint firstItem="0aQ-3U-9Il" firstAttribute="top" secondItem="6g5-dB-3LA" secondAttribute="top" constant="60" id="q5G-Kh-aTV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="03U-Ql-C7w" id="jPW-zm-2WN"/>
+                        <outlet property="firstNameTextField" destination="9ib-0e-e5O" id="S02-6u-mwb"/>
+                        <outlet property="lastNameTextField" destination="dmp-w4-EJA" id="qRI-RU-Qw2"/>
+                        <outlet property="mobilePhoneTextField" destination="V4u-cD-0fS" id="7Oz-zc-ksf"/>
+                        <outlet property="passwordTextField" destination="Wc8-P6-fF2" id="8DJ-ZR-yex"/>
+                        <outlet property="repeatPasswordTextField" destination="qAX-gw-8mm" id="Xz9-sk-lY1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51b-NR-osK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
