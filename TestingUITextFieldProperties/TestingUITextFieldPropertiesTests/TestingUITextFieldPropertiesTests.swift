@@ -29,4 +29,12 @@ class TestingUITextFieldPropertiesTests: XCTestCase {
     
     XCTAssertEqual(emailTextField.textContentType, .emailAddress, "Email address UITextField does not have an Email Address Content set")
   }
+  
+  // throws: 'cause it can throws an error.
+  func testEmailTextField_WhenCreated_HasEmailKeyboardTypeSet() throws {
+    let emailTextField = try XCTUnwrap(sut.emailTextField, "Email address UITextField is not connected")
+    
+    XCTAssertEqual(emailTextField.keyboardType, UIKeyboardType.emailAddress, "Email Address UITextField does not have Email Keyboard type set")
+  }
 }
+
