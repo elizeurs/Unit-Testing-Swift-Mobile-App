@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
     
     self.navigationController?.pushViewController(secondViewController, animated: true)
+    
+//    present(secondViewController, animated: true)
   }
   
 }
