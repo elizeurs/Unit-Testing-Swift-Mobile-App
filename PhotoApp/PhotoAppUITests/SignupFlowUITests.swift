@@ -38,15 +38,22 @@ class SignupFlowUITests: XCTestCase {
       
       
 //      let app = XCUIApplication() // don't need it. already have it.
-      app.textFields["First name:"].tap()
-      app.textFields["Last name: "].tap()
-      app.textFields["Email:"].tap()
-      app.textFields["Password:"].tap()
-      app.textFields["Repeat password:  "].tap()
-      app.buttons["Signup"].tap()
+      let firstName = app.textFields["First name:"]
+      let lastName = app.textFields["Last name: "]
+      let email = app.textFields["Email:"]
+      let password = app.secureTextFields["Password:"]
+      let repeatPassword = app.secureTextFields["Repeat password:  "]
+      let signupButton = app.buttons["Signup"]
+      
+      XCTAssertTrue(firstName.isEnabled, "First name UITextField is not enabled for user interactions")
+      XCTAssertTrue(lastName.isEnabled, "Last name UITextField is not enabled for user interactions")
+      XCTAssertTrue(email.isEnabled, "Email address UITextField is not enabled for user interactions")
+      XCTAssertTrue(password.isEnabled, "Password UITextField is not enabled for user interactions")
+      XCTAssertTrue(repeatPassword.isEnabled, "Repeat password UITextField is not enabled for user interactions")
+      XCTAssertTrue(signupButton.isEnabled, "The Signup button is not enabled for user interactions")
+      
 //      app.staticTexts["Signup"].tap()
                   
-
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
