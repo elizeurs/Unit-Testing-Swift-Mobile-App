@@ -7,7 +7,7 @@
 
 import XCTest
 
-class PhotoAppUITests: XCTestCase {
+class SignupFlowUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,10 +22,21 @@ class PhotoAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testSignupViewController_WhenViewloaded_RequiredUIElementsAreEnable() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+      
+      
+//      let element = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+//      element.children(matching: .textField).element(boundBy: 0).tap()
+//      element.children(matching: .textField).element(boundBy: 1).tap()
+//      element.children(matching: .textField).element(boundBy: 2).tap()
+//      element.children(matching: .textField).element(boundBy: 3).tap()
+//      element.children(matching: .textField).element(boundBy: 4).tap()
+//      app/*@START_MENU_TOKEN@*/.staticTexts["Signup"]/*[[".buttons[\"Signup\"].staticTexts[\"Signup\"]",".staticTexts[\"Signup\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+      
+      
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
