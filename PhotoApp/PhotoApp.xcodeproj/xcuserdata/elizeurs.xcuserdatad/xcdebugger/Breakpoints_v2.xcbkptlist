@@ -64,7 +64,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
                   endingLineNumber = "42"
-                  offsetFromSymbolStart = "243">
+                  offsetFromSymbolStart = "261">
                </Location>
                <Location
                   uuid = "D334C83C-49A6-49E7-BECA-DCB7E53683AD - cd302722bf9da33d"
@@ -79,7 +79,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
                   endingLineNumber = "42"
-                  offsetFromSymbolStart = "647">
+                  offsetFromSymbolStart = "683">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -113,6 +113,22 @@
             startingLineNumber = "111"
             endingLineNumber = "111"
             landmarkName = "testSignupWebService_WhenURLRequestFails_ReturnsErrorMessageDescription()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AFFE2CC-E80B-43AF-B046-4D1A7796676B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoAppUITests/SignupFlowUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "testSignupViewController_WhenViewloaded_RequiredUIElementsAreEnable()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
