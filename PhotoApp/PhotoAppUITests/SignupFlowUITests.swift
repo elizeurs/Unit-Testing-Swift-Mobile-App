@@ -37,6 +37,15 @@ class SignupFlowUITests: XCTestCase {
 //      app/*@START_MENU_TOKEN@*/.staticTexts["Signup"]/*[[".buttons[\"Signup\"].staticTexts[\"Signup\"]",".staticTexts[\"Signup\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
       
       
+//      let app = XCUIApplication() // don't need it. already have it.
+      app.textFields["First name:"].tap()
+      app.textFields["Last name: "].tap()
+      app.textFields["Email:"].tap()
+      app.textFields["Password:"].tap()
+      app.textFields["Repeat password:  "].tap()
+      app.buttons["Signup"].tap()
+//      app.staticTexts["Signup"].tap()
+                  
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
