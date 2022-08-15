@@ -102,6 +102,31 @@ class SignupFlowUITests: XCTestCase {
     
   }
 
+  func testViewController_WhenValidFormSubmitted_PresentsSuccessAlertDialog() {
+    // Arrange
+    firstName.tap()
+    firstName.typeText("Sergey")
+    
+    lastName.tap()
+    lastName.typeText("Kargopolov")
+    
+    email.tap()
+    email.typeText("test@test.com")
+    
+    password.tap()
+    password.typeText("12345678")
+    
+    repeatPassword.tap()
+    repeatPassword.typeText("12345678")
+        
+    // Act
+    signupButton.tap()
+    
+    // Assert
+    XCTAssertTrue(app.alerts["successAlertDialog"].waitForExistence(timeout: 3), "A Success Alert was not presented when valid signup form was submitted")
+    
+  }
+  
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
