@@ -8,7 +8,6 @@
 import UIKit
 
 class SignupViewController: UIViewController {
-
   @IBOutlet weak var firstNameTextField: UITextField!
   @IBOutlet weak var lastNameTextField: UITextField!
   @IBOutlet weak var emailTextField: UITextField!
@@ -21,6 +20,18 @@ class SignupViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+#if DEBUG
+    if CommandLine.arguments.contains("-skipSurvey") {
+      print("Skipping survey page")
+    }
+#endif
+    
+#if DEBUG
+    if ProcessInfo.processInfo.arguments.contains("-skipSurvey") {
+      print("Skipping survey page")
+    }
+#endif
+    
     if signupPresenter == nil {
       let signupModelValidator = SignupFormModelValidator()
       let webservice = SignupWebService(urlString: SignupConstants.signupURLString)
@@ -28,7 +39,7 @@ class SignupViewController: UIViewController {
       signupPresenter = SignupPresenter(formModelValidator: signupModelValidator, webservice: webservice, delegate: self)
     }
   }
-    
+  
   @IBAction func signupButtonTapped(_ sender: Any) {
     let signupFormModel = SignupFormModel(firstName: firstNameTextField.text ?? "",
                                           lastName: lastNameTextField.text ?? "",

@@ -21,6 +21,7 @@ class SignupFlowUITests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
       
       app = XCUIApplication()
+      app.launchArguments = ["-skipSurvey", "-debugServer"]
       app.launch()
       
       firstName = app.textFields["firstNameTextField"]
