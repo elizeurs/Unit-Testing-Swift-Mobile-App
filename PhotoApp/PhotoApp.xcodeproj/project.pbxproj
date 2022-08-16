@@ -75,6 +75,7 @@
 		7549707728A704F1009BD8C7 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7549707928A704F1009BD8C7 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		7549707B28A704F1009BD8C7 /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75552BFA28AC44FC005D54E8 /* PhotoApp-UITestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestsPlan.xctestplan"; sourceTree = "<group>"; };
 		7563BDC42899DB5400396FE5 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		7563BDC62899DD2100396FE5 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		7581ABDF28A15BE6008A1ED7 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
@@ -269,6 +270,7 @@
 		7549707828A704F1009BD8C7 /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				75552BFA28AC44FC005D54E8 /* PhotoApp-UITestsPlan.xctestplan */,
 				7549707928A704F1009BD8C7 /* SignupFlowUITests.swift */,
 				7549707B28A704F1009BD8C7 /* PhotoAppUITestsLaunchTests.swift */,
 			);
