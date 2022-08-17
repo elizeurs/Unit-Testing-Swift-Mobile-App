@@ -76,6 +76,8 @@
 		7549707928A704F1009BD8C7 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		7549707B28A704F1009BD8C7 /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		75552BFA28AC44FC005D54E8 /* PhotoApp-UITestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestsPlan.xctestplan"; sourceTree = "<group>"; };
+		75552BFB28AC5167005D54E8 /* PhotoApp-UnitTestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UnitTestsPlan.xctestplan"; sourceTree = "<group>"; };
+		75552BFC28AC7ADB005D54E8 /* PhotoApp-MainTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-MainTestPlan.xctestplan"; sourceTree = "<group>"; };
 		7563BDC42899DB5400396FE5 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		7563BDC62899DD2100396FE5 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		7581ABDF28A15BE6008A1ED7 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		751A6BAD2891BBE1008DE426 = {
 			isa = PBXGroup;
 			children = (
+				75552BFC28AC7ADB005D54E8 /* PhotoApp-MainTestPlan.xctestplan */,
 				751A6BB82891BBE1008DE426 /* PhotoApp */,
 				751A6BD22891BCB2008DE426 /* PhotoAppTests */,
 				7549707828A704F1009BD8C7 /* PhotoAppUITests */,
@@ -211,6 +214,7 @@
 		751A6BD22891BCB2008DE426 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				75552BFB28AC5167005D54E8 /* PhotoApp-UnitTestsPlan.xctestplan */,
 				75455407289849C300D813C8 /* Signup */,
 			);
 			path = PhotoAppTests;

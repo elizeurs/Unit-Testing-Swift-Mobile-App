@@ -38,13 +38,6 @@
     {
       "target" : {
         "containerPath" : "container:PhotoApp.xcodeproj",
-        "identifier" : "751A6BD02891BCB2008DE426",
-        "name" : "PhotoAppTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:PhotoApp.xcodeproj",
         "identifier" : "7549707628A704F1009BD8C7",
         "name" : "PhotoAppUITests"
       }
