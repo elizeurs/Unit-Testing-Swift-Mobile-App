@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings(English).strings
+  LocalizableScreenshotsExample
+
+  Created by Elizeu RS on 17/08/22.
+  
+*/
+
+// Signup Form Strings
+
+firstNameTextFieldPlaceholder = "First name";
+lastNameTextFieldPlaceholder = "Last name";
+emailTextFieldPlaceholder = "Email";
+passwordSecureTextFieldPlaceholder = "Password";
+repeatPasswordNameTextFieldPlaceholder = "Repeat Password";
+signupForm_SignupAction_ButtonTitle = "Signup";
+
+// Signup Form Error Alert Strings
+signupErrorAlertTitle = "Error";
+signupFormErrorAlertBodyMessage = "An account with the provided details could not be created.":
+signupFormErrorAlertOkButtonTitle = "Ok";
